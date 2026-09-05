@@ -44,8 +44,8 @@ PSF и PMF, табу ментора. Поверх — трекинговая р�
 ## Установка
 
 ```bash
-git clone https://github.com/rvignatenko/trekker-akseleratora.git \
-  ~/.claude/skills/trekker-akseleratora
+git clone https://github.com/rvignatenko/treker-akseleratora.git \
+  ~/.claude/skills/treker-akseleratora
 ```
 
 или просто скопируйте папку в `~/.claude/skills/`. Скилл появится в новом чате
