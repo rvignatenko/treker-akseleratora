@@ -1,0 +1,100 @@
+{
+  "_": "Пример настроек. Ключи — латиницей (их читает код), значения — на любом языке (их читают люди). Настоящий файл лежит в корне проекта под именем nastrojki.json.",
+
+  "akselerator": {
+    "nazvanie": "Название программы",
+    "organizator": "Кто проводит",
+    "cel": "Одной фразой: к чему программа ведёт команды. Например: первые экспортные отгрузки в страны СНГ.",
+    "start": "2026-07-14",
+    "final": "2026-10-06",
+    "demo_den": "2026-09-29",
+    "demo_den_podtverzhden": false,
+    "vsego_nedel": 12,
+    "obeschano_organizatorami": [
+      "6 экспертных консультаций на команду",
+      "не менее 7 B2B-встреч с партнёрами",
+      "демо-день"
+    ]
+  },
+
+  "treki": [
+    {
+      "kod": "trek-a",
+      "nazvanie": "Название потока А",
+      "papka": "Поток А",
+      "materialy": "https://адрес, куда организаторы выкладывают записи занятий",
+      "prefiks_fajlov": "A-"
+    },
+    {
+      "kod": "trek-b",
+      "nazvanie": "Название потока Б",
+      "papka": "Поток Б",
+      "materialy": "https://адрес второго потока",
+      "prefiks_fajlov": "B-"
+    }
+  ],
+
+  "komandy": [
+    {
+      "kod": "komanda-1",
+      "nazvanie": "Название команды",
+      "trek": "trek-a",
+      "papka_lokalno": "Поток А/Название команды",
+      "papka_setevaya": "/абсолютный/путь/к/папке/команды/на/сетевом/диске",
+      "lpr": "Имя первого лица и должность",
+      "uchastniki": ["Кто ходит на встречи"]
+    }
+  ],
+
+  "struktura_komandy": {
+    "vstrechi": "1-Встречи",
+    "zapisi": "2-Записи",
+    "dnevniki": "3-Дневники",
+    "kompaniya": "4-О компании"
+  },
+
+  "imena": {
+    "vstrecha": "{data}-{komanda}-{tip}",
+    "plan_suffiks": "-план",
+    "rabochij_dnevnik": "Рабочий дневник трекера - {komanda}.docx",
+    "reestr_dnevnika": "reestr.md",
+    "papka_kontrolya": "_kontrol-dnevnika",
+    "papka_snimkov": "snimki"
+  },
+
+  "dnevnik_komandy": {
+    "_": "Как устроен официальный дневник команды, который ведут по шаблону организаторов. Нужен скрипту snimok-dnevnika.py.",
+    "fajl_soderzhit": "Дневник команды",
+    "list_kartochka": "1",
+    "list_vstrechi": "2",
+    "list_gipotezy": "3",
+    "kolonki_vstrech": { "B": "ТМ1/ДС", "C": "ТМ2", "D": "ТМ3", "E": "ТМ4", "F": "ТМ5", "G": "ТМ6", "H": "ТМ7", "I": "ТМ8", "J": "ТМ9" },
+    "stroki_vstrech": [3, 20],
+    "stroki_gipotez": [8, 20],
+    "cvet_trekera": "FFFF0000"
+  },
+
+  "rasshifrovka": {
+    "sposob": "gladia",
+    "_sposob": "gladia | whisper-lokalno | vneshnij",
+    "yazyk": "ru",
+    "diarizaciya": true,
+    "kljuch_iz_peremennoj": "GLADIA_API_KEY",
+    "model_whisper": "large-v3",
+    "komanda_vneshnyaya": "/путь/к/вашему/инструменту {fajl} --only txt"
+  },
+
+  "set": {
+    "vpn": false,
+    "mimo_tonnelya": ["api.gladia.io"],
+    "cherez_tonnel": [],
+    "interfejs_obhoda": "en0"
+  },
+
+  "ritm": {
+    "den_nedeli": "пятница",
+    "vremya": "14:00",
+    "dlitelnost_min": 60,
+    "minimum_min": 45
+  }
+}
